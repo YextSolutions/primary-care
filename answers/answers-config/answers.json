@@ -73,6 +73,28 @@
       "sortBys": [],
       "source": "KNOWLEDGE_MANAGER"
     },
+    "jobs": {
+      "entityTypes": [
+        "job"
+      ],
+      "name": "Jobs",
+      "searchableFields": {
+        "builtin.entityType": {
+          "nlpFilter": true
+        },
+        "employmentType": {
+          "nlpFilter": true
+        },
+        "hiringOrganization": {
+          "textSearch": true
+        },
+        "name": {
+          "textSearch": true
+        }
+      },
+      "sortBys": [],
+      "source": "KNOWLEDGE_MANAGER"
+    },
     "links": {
       "apiKey": "REPLACE_API_KEY",
       "cx": "REPLACE_CX_KEY",
