@@ -1,0 +1,235 @@
+{
+  "$schema": "https://schema.yext.com/config/answers/answers-config/v1",
+  "$id": "answers",
+  "name": "Answers",
+  "supportedLocales": [],
+  "countryRestrictions": [],
+  "verticals": {
+    "cdc-covid": {
+      "headers": {},
+      "method": "POST",
+      "name": "CDC Coronavirus FAQs",
+      "params": {},
+      "source": "CUSTOM_SEARCHER",
+      "url": "https://lps9q23cb7.execute-api.us-east-1.amazonaws.com/prod"
+    },
+    "facilities": {
+      "entityTypes": [
+        "healthcareFacility"
+      ],
+      "name": "Facilities",
+      "savedSearchId": "36130108",
+      "searchableFields": {
+        "address": {
+          "directAnswer": true
+        },
+        "builtin.entityType": {
+          "nlpFilter": true
+        },
+        "builtin.location": {
+          "nlpFilter": true
+        },
+        "builtin.medicalSpecialty": {
+          "facet": true,
+          "nlpFilter": true
+        },
+        "builtinFile.medicalFacilityConditions": {
+          "nlpFilter": true
+        },
+        "c_relatedProfessionals.name": {
+          "textSearch": true
+        },
+        "c_relatedSpecialty.name": {
+          "textSearch": true
+        },
+        "insuranceAccepted": {
+          "facet": true,
+          "nlpFilter": true
+        },
+        "mainPhone": {
+          "directAnswer": true
+        },
+        "name": {
+          "textSearch": true
+        }
+      },
+      "sortBys": [],
+      "source": "KNOWLEDGE_MANAGER"
+    },
+    "faqs": {
+      "entityTypes": [
+        "faq"
+      ],
+      "name": "FAQs",
+      "savedSearchId": "36124709",
+      "searchableFields": {
+        "builtin.entityType": {
+          "nlpFilter": true
+        },
+        "name": {
+          "textSearch": true
+        }
+      },
+      "sortBys": [],
+      "source": "KNOWLEDGE_MANAGER"
+    },
+    "links": {
+      "apiKey": "REPLACE_API_KEY",
+      "cx": "REPLACE_CX_KEY",
+      "name": "Links",
+      "siteRestricted": false,
+      "source": "GOOGLE_CSE",
+      "useSynonyms": "ALL_SYNONYMS"
+    },
+    "nhs-covid": {
+      "headers": {},
+      "method": "POST",
+      "name": "NHS Coronavirus FAQs",
+      "params": {},
+      "source": "CUSTOM_SEARCHER",
+      "url": "https://qt81fms627.execute-api.us-east-1.amazonaws.com/prod"
+    },
+    "providers": {
+      "entityTypes": [
+        "healthcareProfessional"
+      ],
+      "name": "Providers",
+      "searchableFields": {
+        "address": {
+          "directAnswer": true
+        },
+        "builtin.entityType": {
+          "nlpFilter": true
+        },
+        "builtin.location": {
+          "nlpFilter": true
+        },
+        "builtin.medicalSpecialty": {
+          "facet": true,
+          "nlpFilter": true
+        },
+        "builtinFile.medicalCondition": {
+          "nlpFilter": true
+        },
+        "c_relatedLocations.name": {
+          "textSearch": true
+        },
+        "firstName": {
+          "nlpFilter": true
+        },
+        "gender": {
+          "facet": true,
+          "nlpFilter": true
+        },
+        "insuranceAccepted": {
+          "facet": true,
+          "nlpFilter": true
+        },
+        "languages": {
+          "facet": true,
+          "nlpFilter": true,
+          "textSearch": true
+        },
+        "lastName": {
+          "nlpFilter": true
+        },
+        "mainPhone": {
+          "directAnswer": true
+        },
+        "name": {
+          "nlpFilter": true
+        }
+      },
+      "sortBys": [],
+      "source": "KNOWLEDGE_MANAGER"
+    },
+    "specialties": {
+      "entityTypes": [
+        "ce_specialty"
+      ],
+      "name": "Specialties",
+      "searchableFields": {
+        "builtin.entityType": {
+          "nlpFilter": true
+        },
+        "name": {
+          "textSearch": true
+        }
+      },
+      "sortBys": [],
+      "source": "KNOWLEDGE_MANAGER"
+    },
+    "who-covid": {
+      "headers": {},
+      "method": "POST",
+      "name": "WHO Coronavirus FAQs",
+      "params": {},
+      "source": "CUSTOM_SEARCHER",
+      "url": "https://twm82am3y0.execute-api.us-east-1.amazonaws.com/prod"
+    }
+  },
+  "autocomplete": {
+    "disablePopularQueries": false,
+    "hardcodedPrompts": [
+      "Doctors in New York",
+      "Clinic near me",
+      "Knee pain",
+      "Doctors who speak Spanish and take CIGNA"
+    ]
+  },
+  "synonyms": {
+    "oneWay": [
+      {
+        "phrase": "phone",
+        "synonyms": [
+          "main phone"
+        ]
+      },
+      {
+        "phrase": "call",
+        "synonyms": [
+          "main phone"
+        ]
+      },
+      {
+        "phrase": "who take",
+        "synonyms": [
+          "insurance accepted"
+        ]
+      }
+    ],
+    "synonymSet": [
+      [
+        "covid",
+        "coronavirus",
+        "corona",
+        "virus",
+        "covid19",
+        "covid-19"
+      ],
+      [
+        "doctor",
+        "doctors",
+        "physician",
+        "physicians",
+        "provider",
+        "providers",
+        "professional",
+        "professionals",
+        "healthcare professional",
+        "healthcare professionals"
+      ],
+      [
+        "location",
+        "locations",
+        "clinic",
+        "clinics",
+        "facility",
+        "facilities",
+        "healthcare facility",
+        "healthcare facilities"
+      ]
+    ]
+  },
+  "localizations": {}
+}
