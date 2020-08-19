@@ -5,7 +5,7 @@
   "features": [
     {
       "featureType": "SELF_SERVE_PAGE_SET",
-      "feature": "FAQ Page Template"
+      "feature": "FAQ_Page_Template"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "$id": "Healthcare Professional Template",
+  "$id": "Healthcare_Professional_Template",
   "$schema": "https://schema.yext.com/config/pages/page-builder-template/v1",
   "PageSetType": "TEMPLATE",
   "EntityTypeName": "healthcareProfessional",
@@ -638,5 +638,6 @@
     },
     "Theme": "cosmo",
     "ThemeVersion": 17
-  }
+  },
+  "Name": "Healthcare Professional Template"
 }
