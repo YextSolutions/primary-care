@@ -1,9 +1,9 @@
 {
-  "$id": "Answers",
+  "$id": "Answers-Primary-Care",
   "$schema": "https://schema.yext.com/config/pages/site-config/v1",
-  "siteName": "Answers",
+  "siteName": "Answers - Primary Care",
   "repoConfig": {
-    "targetRepoName": "${{answers_github_repository_name}}",
+    "targetRepoName": "primary-care-template-answers-site-${{businessId}}.com",
     "templateRepo": "github.com/yext-pages/answers-template-primary-care-solution"
   },
   "publishingConfig": {
