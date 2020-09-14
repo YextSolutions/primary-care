@@ -1,11 +1,11 @@
 {
-  "$id": "Healthcare Professional Template",
+  "$id": "Healthcare_Facility_Template",
   "$schema": "https://schema.yext.com/config/pages/site-config/v1",
-  "siteName": "Healthcare Professional Template",
+  "siteName": "Healthcare Facility Template",
   "features": [
     {
       "featureType": "SELF_SERVE_PAGE_SET",
-      "feature": "Healthcare_Professional_Template"
+      "feature": "Healthcare_Facility_Template"
     }
   ]
 }
