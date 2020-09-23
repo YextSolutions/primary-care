@@ -33,9 +33,6 @@
           "facet": true,
           "nlpFilter": true
         },
-        "builtinFile.medicalFacilityConditions": {
-          "nlpFilter": true
-        },
         "c_relatedProfessionals.name": {
           "textSearch": true
         },
@@ -50,6 +47,9 @@
           "directAnswer": true
         },
         "name": {
+          "textSearch": true
+        },
+        "keywords": {
           "textSearch": true
         }
       },
@@ -67,6 +67,9 @@
           "nlpFilter": true
         },
         "name": {
+          "textSearch": true
+        },
+        "keywords": {
           "textSearch": true
         }
       },
@@ -89,6 +92,9 @@
           "textSearch": true
         },
         "name": {
+          "textSearch": true
+        },
+        "keywords": {
           "textSearch": true
         }
       },
@@ -130,9 +136,6 @@
           "facet": true,
           "nlpFilter": true
         },
-        "builtinFile.medicalCondition": {
-          "nlpFilter": true
-        },
         "c_relatedLocations.name": {
           "textSearch": true
         },
@@ -160,6 +163,9 @@
         },
         "name": {
           "nlpFilter": true
+        },
+        "keywords": {
+          "textSearch": true
         }
       },
       "sortBys": [],
@@ -175,6 +181,9 @@
           "nlpFilter": true
         },
         "name": {
+          "textSearch": true
+        },
+        "keywords": {
           "textSearch": true
         }
       },
