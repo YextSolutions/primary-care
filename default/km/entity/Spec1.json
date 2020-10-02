@@ -4,28 +4,7 @@
   "content": {
     "c_activeInAnswers": true,
     "c_photo": {
-      "image": {
-        "height": 1500,
-        "thumbnails": [
-          {
-            "height": 619,
-            "url": "http://a.mktgcdn.com/p/duUyOVNCA3PChmeGpFERvdFSiIz0yxT7xcp64Nf0OjI/619x619.jpg",
-            "width": 619
-          },
-          {
-            "height": 450,
-            "url": "http://a.mktgcdn.com/p/duUyOVNCA3PChmeGpFERvdFSiIz0yxT7xcp64Nf0OjI/450x450.jpg",
-            "width": 450
-          },
-          {
-            "height": 195,
-            "url": "http://a.mktgcdn.com/p/duUyOVNCA3PChmeGpFERvdFSiIz0yxT7xcp64Nf0OjI/195x195.jpg",
-            "width": 195
-          }
-        ],
-        "url": "http://a.mktgcdn.com/p/duUyOVNCA3PChmeGpFERvdFSiIz0yxT7xcp64Nf0OjI/1500x1500.jpg",
-        "width": 1500
-      }
+        "url": "http://a.mktgcdn.com/p/duUyOVNCA3PChmeGpFERvdFSiIz0yxT7xcp64Nf0OjI/1500x1500.jpg"
     },
     "c_primaryCTA": {
       "label": "Visit Page",
