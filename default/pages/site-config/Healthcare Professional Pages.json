@@ -1,11 +1,11 @@
 {
-  "$id": "Healthcare_Professional_Template",
+  "$id": "vanish-composed-reactor-e1a2c",
   "$schema": "https://schema.yext.com/config/pages/site-config/v1",
   "siteName": "Healthcare Professional Template",
   "features": [
     {
       "featureType": "SELF_SERVE_PAGE_SET",
-      "feature": "Healthcare_Professional_Template"
+      "feature": "irritant-dingbat-jukebox-c1225"
     }
   ]
 }

@@ -1,7 +1,8 @@
 {
-  "$id": "Healthcare_Facility_Template",
+  "$id": "fang-trump-choosing-077af",
   "$schema": "https://schema.yext.com/config/pages/page-builder-template/v1",
   "PageSetType": "TEMPLATE",
+  "Name": "Healthcare Facility Template",
   "EntityTypeName": "healthcareFacility",
   "PageSetConfig": {
     "ContentMapping": {
@@ -97,18 +98,19 @@
               "ExternalEntityId": "",
               "InputType": "",
               "Sink": "answersExperience",
+              "StringValue": "answers",
               "SubparameterContentMapEntries": [
                 {
                   "ExternalEntityId": "",
-                  "InputType": "",
+                  "InputType": "CONSTANT",
                   "Sink": "configurationLabel",
-                  "StringValue": "PRODUCTION"
+                  "StringValue": "STAGING"
                 },
                 {
                   "ExternalEntityId": "",
                   "InputType": "",
                   "Sink": "searchResultsPageUrl",
-                  "StringValue": ""
+                  "StringValue": " "
                 },
                 {
                   "ExternalEntityId": "",
@@ -118,24 +120,24 @@
                 },
                 {
                   "ExternalEntityId": "",
-                  "InputType": "",
+                  "InputType": "CONSTANT",
                   "Sink": "placeholderText",
                   "StringValue": "Search..."
                 },
                 {
                   "ExternalEntityId": "",
-                  "InputType": "",
+                  "InputType": "CONSTANT",
                   "Sink": "autocompletePromptHeading",
-                  "StringValue": "You can ask your brand:"
+                  "StringValue": "You can ask us:"
                 }
               ]
             }
           ],
-          "DefaultScss": ".module-navbar {\n\tpadding: 0;\n}\n\n.module-navbar-bg-color {\n  background-color: #f8f9fa;\n}\n\n.module-navbar .navbar-brand img {\n\theight: 50px; //height of the logo\n}\n\n.nav-link {\n    margin: 0 15px;\n}\n",
+          "DefaultScss": ".module-navbar {\n  padding: 0;\n}\n\n.header {\n  display: flex;\n  align-items: center;\n  width: 100%;\n\n  @include media-breakpoint-up(md) {\n    width: auto;\n  }\n}\n\n.logo-image {\n  object-fit: contain;\n  height: 100%;\n  max-height: 26px;\n\n  @include media-breakpoint-up(md) {\n    max-height: 45px;\n  }\n\n  @include media-breakpoint-up(lg) {\n    max-height: 44px;\n  }\n}\n\n.navbar {\n  background-color: $gray-100;\n  @extend .navbar-light;\n\n  @include media-breakpoint-up(md) {\n    height: 70px;\n    padding-left: 0;\n    padding-right: 0;\n  }\n\n  \u0026-brand {\n    padding: 0;\n  }\n\n  \u0026-nav {\n    padding-left: 0;\n    padding-right: 0;\n    padding-top: 1rem;\n    width: 100%;\n\n    @include media-breakpoint-up(md) {\n      align-items: center;\n      padding-top: 0;\n    }\n  }\n\n  \u0026-toggler {\n    border: 0;\n    padding: 0;\n    margin-left: auto;\n  }\n}\n\n.links-div {\n  display: flex;\n  flex-direction: column;\n  order: 2;\n  padding-left: 0;\n  padding-right: 0;\n\n  @include media-breakpoint-up(md) {\n    flex-direction: row;\n    order: 0;\n\n    .nav-item:first-child() {\n      padding-left: 0;\n    }\n\n    .nav-item {\n      align-self: center;\n    }\n  }\n}\n\n.answers-div {\n  padding-left: 0;\n  padding-right: 0;\n  padding-bottom: .5rem;\n  margin-left: auto;\n\n  @include media-breakpoint-up(md) {\n    padding-bottom: 0;\n  }\n}\n\n.yxt-SearchBar-form {\n  height: 44px;\n}\n\n.yxt-SearchBar {\n  height: 44px;\n\n  \u0026-input {\n    padding-right: var(--yxt-base-spacing)/2;\n  }\n}\n",
           "Js": "",
           "ListParamEntries": [],
           "ModuleId": "H9htkorN9_",
-          "Scss": ".module-navbar {\n\tpadding: 0;\n}\n\n.module-navbar-bg-color {\n  background-color: #f8f9fa;\n}\n\n.module-navbar .navbar-brand img {\n\theight: 50px; //height of the logo\n}\n\n.nav-link {\n    margin: 0 15px;\n}\n"
+          "Scss": ".module-navbar {\n  padding: 0;\n}\n\n.header {\n  display: flex;\n  align-items: center;\n  width: 100%;\n\n  @include media-breakpoint-up(md) {\n    width: auto;\n  }\n}\n\n.logo-image {\n  object-fit: contain;\n  height: 100%;\n  max-height: 26px;\n\n  @include media-breakpoint-up(md) {\n    max-height: 45px;\n  }\n\n  @include media-breakpoint-up(lg) {\n    max-height: 44px;\n  }\n}\n\n.navbar {\n  background-color: $gray-100;\n  @extend .navbar-light;\n\n  @include media-breakpoint-up(md) {\n    height: 70px;\n    padding-left: 0;\n    padding-right: 0;\n  }\n\n  \u0026-brand {\n    padding: 0;\n  }\n\n  \u0026-nav {\n    padding-left: 0;\n    padding-right: 0;\n    padding-top: 1rem;\n    width: 100%;\n\n    @include media-breakpoint-up(md) {\n      align-items: center;\n      padding-top: 0;\n    }\n  }\n\n  \u0026-toggler {\n    border: 0;\n    padding: 0;\n    margin-left: auto;\n  }\n}\n\n.links-div {\n  display: flex;\n  flex-direction: column;\n  order: 2;\n  padding-left: 0;\n  padding-right: 0;\n\n  @include media-breakpoint-up(md) {\n    flex-direction: row;\n    order: 0;\n\n    .nav-item:first-child() {\n      padding-left: 0;\n    }\n\n    .nav-item {\n      align-self: center;\n    }\n  }\n}\n\n.answers-div {\n  padding-left: 0;\n  padding-right: 0;\n  padding-bottom: .5rem;\n  margin-left: auto;\n\n  @include media-breakpoint-up(md) {\n    padding-bottom: 0;\n  }\n}\n\n.yxt-SearchBar-form {\n  height: 44px;\n}\n\n.yxt-SearchBar {\n  height: 44px;\n\n  \u0026-input {\n    padding-right: var(--yxt-base-spacing)/2;\n  }\n}\n"
         },
         {
           "ContentMapEntries": [
@@ -287,6 +289,11 @@
               "ExternalEntityId": "",
               "InputType": "",
               "Sink": "hours2"
+            },
+            {
+              "ExternalEntityId": "",
+              "InputType": "",
+              "Sink": "customPin"
             }
           ],
           "DefaultScss": "padding: 2rem 0px;\n$spacer: 1rem;\n\n.location-name {\n  font-weight: bold;\n}\n\n//displays phonenumber as button on smaller devices\n.phone-link {\n  @media (min-width: 768px) {\n    display: none;\n  }\n}\n\n.phone-text {\n  @media (max-width: 768px) {\n    display: none;\n  }\n}\n\n.arrow-img {\n    transform: rotate(-180deg);\n    margin-bottom: 10px;\n}\n\n.collapsed .arrow-img {\n    transform: rotate(0deg);\n    margin-bottom: 0px;\n}\n\n.info-header {\n\n}\n\n.hours-header {\n\n}\n\n.primary-open-today {\n\n}\n\n.secondary-hours-header {\n    margin-top: $spacer;\n}\n\n.secondary-open-today {\n    font-size: 16px;\n    text-decoration: none;\n    color: inherit;\n}\n\n.arrow-img {\n    margin-left: 0.5rem;\n    padding-bottom: 5px;\n}\n\n.ctas {\n  margin-top: 1rem;\n\n  .btn {\n    @media (min-width: 768px) {\n      margin-bottom: 0.25rem;\n\n      \u0026:not(:last-child) {\n        margin-right: 0.25rem;\n      }\n    }\n    @media (max-width: 768px) {\n      display: block;\n      margin-bottom: 0.25rem;\n    }\n  }\n\n  .directions-cta {}\n\n  .secondary-cta {}\n}\n\n//display the current day as bold\n.hours {\n  .hours-row-today {\n    font-weight: bold;\n  }\n\n  .hours-label {\n    vertical-align: top;\n    padding-right: 10px;\n  }\n\n}\n\n.map {\n  height: 300px;\n}",
@@ -365,11 +372,9 @@
                 },
                 {
                   "ExternalEntityId": "",
-                  "InputType": "FIELD",
-                  "SelectedField": [
-                    "c_answersSpecialty"
-                  ],
-                  "Sink": "title"
+                  "InputType": "",
+                  "Sink": "title",
+                  "StringValue": "Title"
                 },
                 {
                   "ExternalEntityId": "",
@@ -399,35 +404,25 @@
                   "ExternalEntityId": "",
                   "InputType": "",
                   "SelectedField": [
-                    "none"
+                    "description"
                   ],
                   "Sink": "details"
                 },
                 {
                   "ExternalEntityId": "",
-                  "InputType": "FIELD",
-                  "SelectedField": [
-                    "c_primaryCTA",
-                    "label"
-                  ],
-                  "Sink": "ctaText"
+                  "InputType": "",
+                  "Sink": "ctaText",
+                  "StringValue": "View Profile"
                 },
                 {
                   "ExternalEntityId": "",
-                  "InputType": "FIELD",
-                  "SelectedField": [
-                    "c_primaryCTA",
-                    "link"
-                  ],
-                  "Sink": "ctaUrl"
+                  "InputType": "",
+                  "Sink": "ctaUrl",
+                  "StringValue": "#"
                 }
               ],
-              "ListParamSource": {
-                "AlternateExternalEntityId": "",
-                "EntityTypeName": "location",
-                "RelationshipField": "c_relatedProfessionals",
-                "Reviews": false,
-                "SavedSearch": ""
+              "SavedSearchSource": {
+                "ExternalSearchId": "63999746"
               },
               "Sink": "people"
             }
@@ -670,45 +665,33 @@
                 },
                 {
                   "ExternalEntityId": "",
-                  "InputType": "FIELD",
-                  "SelectedField": [
-                    "name"
-                  ],
-                  "Sink": "questionText"
+                  "InputType": "",
+                  "Sink": "questionText",
+                  "StringValue": "Question Text"
                 },
                 {
                   "ExternalEntityId": "",
-                  "InputType": "FIELD",
-                  "SelectedField": [
-                    "answer"
-                  ],
-                  "Sink": "answerText"
+                  "InputType": "",
+                  "Sink": "answerText",
+                  "StringValue": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut diam ultrices sem aliquet dapibus. Duis elementum nunc id est lacinia, a vulputate metus feugiat. Sed gravida nisi in odio posuere, convallis congue libero pulvinar. Orci varius natoque penatibus et magnis."
                 },
                 {
                   "ExternalEntityId": "",
-                  "InputType": "FIELD",
-                  "SelectedField": [
-                    "c_primaryCTA",
-                    "label"
-                  ],
-                  "Sink": "linkText"
+                  "InputType": "",
+                  "Sink": "linkText",
+                  "StringValue": "LINK TEXT"
                 },
                 {
                   "ExternalEntityId": "",
                   "InputType": "",
                   "SelectedField": [
-                    "c_primaryCTA",
-                    "link"
+                    "landingPageUrl"
                   ],
                   "Sink": "linkURL"
                 }
               ],
-              "ListParamSource": {
-                "AlternateExternalEntityId": "",
-                "EntityTypeName": "location",
-                "RelationshipField": "c_relatedFAQs",
-                "Reviews": false,
-                "SavedSearch": ""
+              "SavedSearchSource": {
+                "ExternalSearchId": "64032140"
               },
               "Sink": "faqList"
             }
@@ -725,7 +708,7 @@
               "StringValue": "Related  Specialties"
             }
           ],
-          "DefaultScss": "$spacer: 1rem;\n\n// Variables for description text truncation\n$lh: 22;\n$line-height: 22px;\n\n$max-height: 180px;\n$mh: 180;\n$max-num-lines: floor($mh / $lh);\n\n$max-height-tablet: 90px;\n$mht: 90;\n$max-num-lines-tablet: floor($mht / $lh);\n\n$max-height-desktop: 68px;\n$mhd: 68;\n$max-num-lines-desktop: floor($mhd / $lh);\n\n.module-container {\n  padding: ($spacer * 2) 0;\n}\n\nul {\n  padding-inline-start: 0;\n  margin: 0 $spacer;\n}\n\n.row {\n  justify-content: center;\n}\n\n.headline {\n  font-size: 2em;\n  margin-bottom: $spacer;\n\n  @include media-breakpoint-down(sm) {\n    text-align: center;\n  }\n}\n\n.item-col {\n  margin-bottom: $spacer;\n  @include media-breakpoint-down(sm) {\n    text-align: center;\n  }\n}\n\n.section {\n  margin: $spacer $spacer 0;\n  font-size: 1em;\n}\n\n.item {\n  padding-bottom: ($spacer * 2);\n  height: 100%;\n  position: relative;\n  background-color: #f2f2f2;\n  text-align: left;\n  display: flex;\n  flex-direction: column;\n}\n\n.image {\n  object-fit: contain;\n  max-width: 100%;\n  width: 100%;\n  margin-bottom: $spacer;\n\n  \u0026-container {\n    flex-shrink: 0;\n  }\n}\n\n.title {\n  font-size: 1.5em;\n  font-weight: normal;\n  word-break: break-word;\n}\n\n.subtitle {\n  font-size: 1.25em;\n  font-weight: normal;\n}\n\n.address {}\n\n.phone {}\n\n.email {}\n\n.description, .description-text {\n  max-height: $max-height;\n\n  @include media-breakpoint-up(sm) {\n    max-height: $max-height-tablet;\n  }\n\n  @include media-breakpoint-up(lg) {\n    max-height: $max-height-desktop;\n  }\n}\n\n.description-text {\n  -webkit-line-clamp: $max-num-lines;\n  display: -webkit-box;\n  -webkit-box-orient: vertical;\n  overflow: hidden;\n\n  @include media-breakpoint-up(sm) {\n    -webkit-line-clamp: $max-num-lines-tablet;\n  }\n\n  @include media-breakpoint-up(lg) {\n    -webkit-line-clamp: $max-num-lines-desktop;\n  }\n}\n\n.text-list {}\n\n.list-item {\n  margin-left: -5px;\n}\n\n.cta {\n  font-size: 1em;\n  text-decoration: none;\n\n  \u0026-container {\n    display: flex;\n    align-items: flex-end;\n    height: 100%;\n  }\n}\n",
+          "DefaultScss": "$spacer: 1rem;\n\n// Variables for description text truncation\n$lh: 22;\n$line-height: 22px;\n\n$max-height: 180px;\n$mh: 180;\n$max-num-lines: floor($mh / $lh);\n\n$max-height-tablet: 90px;\n$mht: 90;\n$max-num-lines-tablet: floor($mht / $lh);\n\n$max-height-desktop: 68px;\n$mhd: 68;\n$max-num-lines-desktop: floor($mhd / $lh);\n\n.module-container {\n  padding: ($spacer * 2) 15px;\n}\n\nul {\n  padding-inline-start: 0;\n  margin: 0 $spacer;\n}\n\n.row {\n  justify-content: center;\n}\n\n.headline {\n  font-size: 2em;\n  margin-bottom: $spacer;\n\n  @include media-breakpoint-down(sm) {\n    text-align: center;\n  }\n}\n\n.item-col {\n  margin-bottom: $spacer;\n  @include media-breakpoint-down(sm) {\n    text-align: center;\n  }\n}\n\n.section {\n  margin: $spacer $spacer 0;\n  font-size: 1em;\n  word-break: break-word;\n}\n\n.item {\n  height: 100%;\n  position: relative;\n  background-color: #f2f2f2;\n  text-align: left;\n  display: flex;\n  flex-direction: column;\n}\n\n.image {\n  object-fit: contain;\n  max-width: 100%;\n  width: 100%;\n\n  \u0026-container {\n    flex-shrink: 0;\n  }\n}\n\n.content-container {\n  height: 100%;\n  display: flex;\n  flex-direction: column;\n  padding-bottom: $spacer;\n}\n\n.title {\n  font-size: 1.5em;\n  font-weight: normal;\n  word-break: break-word;\n}\n\n.subtitle {\n  font-size: 1.25em;\n  font-weight: normal;\n}\n\n.address {}\n\n.phone {}\n\n.email {}\n\n.description, .description-text {\n  max-height: $max-height;\n\n  @include media-breakpoint-up(sm) {\n    max-height: $max-height-tablet;\n  }\n\n  @include media-breakpoint-up(lg) {\n    max-height: $max-height-desktop;\n  }\n}\n\n.description-text {\n  -webkit-line-clamp: $max-num-lines;\n  display: -webkit-box;\n  -webkit-box-orient: vertical;\n  overflow: hidden;\n\n  @include media-breakpoint-up(sm) {\n    -webkit-line-clamp: $max-num-lines-tablet;\n  }\n\n  @include media-breakpoint-up(lg) {\n    -webkit-line-clamp: $max-num-lines-desktop;\n  }\n}\n\n.text-list {}\n\n.list-item {\n  margin-left: -5px;\n}\n\n.cta {\n  font-size: 1em;\n  text-decoration: none;\n\n  \u0026-container {\n    display: flex;\n    align-items: flex-end;\n    flex: 1;\n  }\n}\n",
           "Js": "",
           "ListParamEntries": [
             {
@@ -733,9 +716,6 @@
                 {
                   "ExternalEntityId": "",
                   "InputType": "",
-                  "SelectedField": [
-                    "c_photo"
-                  ],
                   "Sink": "image"
                 },
                 {
@@ -748,11 +728,9 @@
                 },
                 {
                   "ExternalEntityId": "",
-                  "InputType": "FIELD",
-                  "SelectedField": [
-                    "none"
-                  ],
-                  "Sink": "subtitle"
+                  "InputType": "",
+                  "Sink": "subtitle",
+                  "StringValue": "Subtitle"
                 },
                 {
                   "ExternalEntityId": "",
@@ -796,27 +774,21 @@
                 },
                 {
                   "ExternalEntityId": "",
-                  "InputType": "FIELD",
-                  "SelectedField": [
-                    "c_primaryCTA",
-                    "label"
-                  ],
-                  "Sink": "infoLinkText"
+                  "InputType": "CONSTANT",
+                  "Sink": "infoLinkText",
+                  "StringValue": ""
                 },
                 {
                   "ExternalEntityId": "",
-                  "InputType": "FIELD",
-                  "SelectedField": [
-                    "c_primaryCTA",
-                    "link"
-                  ],
-                  "Sink": "infoLink"
+                  "InputType": "",
+                  "Sink": "infoLink",
+                  "StringValue": "#"
                 }
               ],
               "ListParamSource": {
                 "AlternateExternalEntityId": "",
                 "EntityTypeName": "location",
-                "RelationshipField": "c_relatedSpecialty",
+                "RelationshipField": "c_associatedSpecialty",
                 "Reviews": false,
                 "SavedSearch": ""
               },
@@ -870,6 +842,41 @@
           "ListParamEntries": [],
           "ModuleId": "9HM4QM-3l_",
           "Scss": "padding: 1rem 0;\n\n.headline {\n  text-align: center;\n  padding-bottom: 0.5rem;\n}\n\n.paragraph {\n  text-align: center;\n  max-width: 800px;\n  margin: 0 auto 1rem;\n  padding-bottom: 0.5rem;\n}\n\n.cta {\n    text-align: center;\n}\n"
+        },
+        {
+          "ContentMapEntries": [
+            {
+              "ExternalEntityId": "",
+              "InputType": "CONSTANT",
+              "Sink": "announcementText",
+              "StringValue": "Insert Announcement"
+            },
+            {
+              "ExternalEntityId": "",
+              "InputType": "",
+              "Sink": "announcementUrl",
+              "StringValue": "#"
+            }
+          ],
+          "DefaultScss": ".module-announcement-bar {\n\tpadding: 0;\n}\n\n.module-announcement-bar a {\n\tflex-grow: 1;\n\ttext-align: center;\n\tpadding: 7px 5px;\n}\n\n// Override the background color below\n.module-announcement-bar .btn {\n    // background-color: gray;\n\tborder-radius: 0px;\n\tword-wrap: break-word;\n\twhite-space: normal;\n\tborder: 0px;\n\tmargin: 0px;\n\tbox-shadow: none;\n}",
+          "Js": "",
+          "ListParamEntries": [],
+          "ModuleId": "H9-sFk_lUU",
+          "Scss": ".module-announcement-bar {\n\tpadding: 0;\n}\n\n.module-announcement-bar a {\n\tflex-grow: 1;\n\ttext-align: center;\n\tpadding: 7px 5px;\n}\n\n// Override the background color below\n.module-announcement-bar .btn {\n    // background-color: gray;\n\tborder-radius: 0px;\n\tword-wrap: break-word;\n\twhite-space: normal;\n\tborder: 0px;\n\tmargin: 0px;\n\tbox-shadow: none;\n}"
+        },
+        {
+          "ContentMapEntries": [
+            {
+              "ExternalEntityId": "",
+              "InputType": "",
+              "Sink": "overrideColor"
+            }
+          ],
+          "DefaultScss": ".module {\n  \u0026-divider {\n    padding: 0;\n\n    .hr {\n      width: 100%;\n      height: 1px;\n      background-color: #e5e5e5; // this is the default \u003chr\u003e color\n    }\n  }\n}\n",
+          "Js": "",
+          "ListParamEntries": [],
+          "ModuleId": "JJBTA-_BUU",
+          "Scss": ".module {\n  \u0026-divider {\n    padding: 0;\n\n    .hr {\n      width: 100%;\n      height: 1px;\n      background-color: #e5e5e5; // this is the default \u003chr\u003e color\n    }\n  }\n}\n"
         }
       ],
       "ThemeMapping": {
@@ -963,7 +970,13 @@
         "DisplayNameOverride": "",
         "Id": "H9htkorN9_",
         "Module": "nav_bar",
-        "Version": 46
+        "Version": 53
+      },
+      {
+        "DisplayNameOverride": "",
+        "Id": "H9-sFk_lUU",
+        "Module": "announcement_bar_2",
+        "Version": 20
       },
       {
         "DisplayNameOverride": "",
@@ -975,25 +988,43 @@
         "DisplayNameOverride": "",
         "Id": "uu5s-nDe9_",
         "Module": "location_details_with_map_2",
-        "Version": 91
+        "Version": 94
       },
       {
-        "DisplayNameOverride": "About Your Brand",
-        "Id": "JH5t-XDe9_",
-        "Module": "about_this_page",
-        "Version": 61
+        "DisplayNameOverride": "",
+        "Id": "9HM4QM-3l_",
+        "Module": "centered_text_list",
+        "Version": 29
       },
       {
         "DisplayNameOverride": "Associated Professionals",
         "Id": "uuhskoC3uv",
         "Module": "person_list",
-        "Version": 65
+        "Version": 66
       },
       {
         "DisplayNameOverride": "Related Specialties",
         "Id": "u93xQDANyv",
         "Module": "item_list_i",
-        "Version": 16
+        "Version": 19
+      },
+      {
+        "DisplayNameOverride": "",
+        "Id": "JH5t2nz19R",
+        "Module": "nearby_locations",
+        "Version": 87
+      },
+      {
+        "DisplayNameOverride": "",
+        "Id": "JJBTA-_BUU",
+        "Module": "divider",
+        "Version": 15
+      },
+      {
+        "DisplayNameOverride": "About Your Brand",
+        "Id": "JH5t-XDe9_",
+        "Module": "about_this_page",
+        "Version": 62
       },
       {
         "DisplayNameOverride": "FAQ List",
@@ -1003,21 +1034,9 @@
       },
       {
         "DisplayNameOverride": "",
-        "Id": "9HM4QM-3l_",
-        "Module": "centered_text_list",
-        "Version": 29
-      },
-      {
-        "DisplayNameOverride": "",
-        "Id": "JH5t2nz19R",
-        "Module": "nearby_locations",
-        "Version": 86
-      },
-      {
-        "DisplayNameOverride": "",
         "Id": "HJhskfC19U",
         "Module": "footer",
-        "Version": 52
+        "Version": 53
       }
     ],
     "Path": "",
@@ -1027,6 +1046,5 @@
     },
     "Theme": "cosmo",
     "ThemeVersion": 17
-  },
-  "Name": "Healthcare Facility Template"
+  }
 }

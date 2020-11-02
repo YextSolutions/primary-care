@@ -1,11 +1,11 @@
 {
-  "$id": "Healthcare_Facility_Template",
+  "$id": "synapse-carnivore-scorecard-8da10",
   "$schema": "https://schema.yext.com/config/pages/site-config/v1",
   "siteName": "Healthcare Facility Template",
   "features": [
     {
       "featureType": "SELF_SERVE_PAGE_SET",
-      "feature": "Healthcare_Facility_Template"
+      "feature": "fang-trump-choosing-077af"
     }
   ]
 }
