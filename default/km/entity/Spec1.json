@@ -2,7 +2,7 @@
   "$id": "Spec1",
   "$schema": "https://schema.yext.com/config/km/entity/v1",
   "content": {
-    "c_activeInAnswers": true,
+    "c_activeInAnswers": "YES",
     "c_photo": {
         "url": "http://a.mktgcdn.com/p/duUyOVNCA3PChmeGpFERvdFSiIz0yxT7xcp64Nf0OjI/1500x1500.jpg"
     },
