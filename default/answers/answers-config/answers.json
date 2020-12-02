@@ -59,10 +59,10 @@
           "nlpFilter": true
         },
         "name": {
-          "textSearch": true
+          "semanticTextSearch": true
         },
         "keywords": {
-          "semanticTextSearch": true
+          "textSearch": true
         }
       },
       "sortBys": [],
