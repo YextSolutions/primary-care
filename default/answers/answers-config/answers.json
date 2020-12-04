@@ -73,6 +73,7 @@
         "job"
       ],
       "name": "Jobs",
+      "savedSearchId": "54902431",
       "searchableFields": {
         "builtin.entityType": {
           "nlpFilter": true
