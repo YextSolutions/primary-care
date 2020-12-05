@@ -1,23 +1,18 @@
 {
   "$id": "64221105",
   "$schema": "https://schema.yext.com/config/km/saved-filter/v1",
-  "name": "Pages - Locations",
+  "name": "Pages - Facilities",
   "filter": {
     "entityField": [
       {
-        "fieldId": "c_activeInAnswers",
-        "filterOption": {
-          "choice": [
-            "NO"
-          ],
-          "type": "IS_NOT"
-        }
+        "fieldId": "yext/closed",
+        "searchBool": "FALSE"
       }
     ],
     "entityType": [
       {
         "entityTypeId": [
-          "yext/location"
+          "yext/healthcareFacility"
         ],
         "type": "IS"
       }
