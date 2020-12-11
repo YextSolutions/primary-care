@@ -42,6 +42,10 @@
         "required": false
       },
       {
+        "id": "yext/keywords",
+        "required": false
+      },
+      {
         "id": "yext/folder",
         "required": false
       },
