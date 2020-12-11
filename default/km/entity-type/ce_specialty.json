@@ -38,6 +38,14 @@
       "required": false
     },
     {
+      "id": "c_relatedLocations",
+      "required": false
+    },
+    {
+      "id": "c_relatedProfessionals",
+      "required": false
+    },
+    {
       "id": "yext/folder",
       "required": false
     },

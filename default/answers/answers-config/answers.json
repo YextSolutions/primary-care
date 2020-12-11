@@ -161,6 +161,27 @@
         "ce_specialty"
       ],
       "name": "Specialties",
+      "savedSearchId": "36140906",
+      "searchableFields": {
+        "builtin.entityType": {
+          "nlpFilter": true
+        },
+        "name": {
+          "textSearch": true
+        },
+        "keywords": {
+          "textSearch": true
+        }
+      },
+      "sortBys": [],
+      "source": "KNOWLEDGE_MANAGER"
+    },
+    "conditions": {
+      "entityTypes": [
+        "ce_condition"
+      ],
+      "name": "Conditions",
+      "savedSearchId": "408871669",
       "searchableFields": {
         "builtin.entityType": {
           "nlpFilter": true
