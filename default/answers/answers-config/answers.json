@@ -125,7 +125,7 @@
           "textSearch": true
         },
         "firstName": {
-          "nlpFilter": true
+          "phraseMatch": true
         },
         "gender": {
           "facet": true,
@@ -141,13 +141,13 @@
           "textSearch": true
         },
         "lastName": {
-          "nlpFilter": true
+          "phraseMatch": true
         },
         "mainPhone": {
           "directAnswer": true
         },
         "name": {
-          "nlpFilter": true
+          "textSearch": true
         },
         "keywords": {
           "textSearch": true
