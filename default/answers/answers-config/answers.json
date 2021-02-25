@@ -225,6 +225,13 @@
         "synonyms": [
           "insurance accepted"
         ]
+      },
+      {
+        "phrase": "obgyn",
+        "synonyms": [
+          "obstetrics",
+          "gynecology"
+        ]
       }
     ],
     "synonymSet": [
@@ -257,6 +264,66 @@
         "facilities",
         "healthcare facility",
         "healthcare facilities"
+      ],
+      [
+        "cardiology",
+        "cardiologist",
+        "cardiologists",
+        "heart"
+      ],
+      [
+        "oncology",
+        "oncologist",
+        "oncologists",
+        "cancer"
+      ],
+      [
+        "obstetric",
+        "obstetrics",
+        "obstetrician",
+        "obstetricians"
+      ],
+      [
+        "gynecology",
+        "gynecologist",
+        "gynecologists"
+      ],
+      [
+        "dermatology",
+        "dermatologist",
+        "dermatologists"
+      ],
+      [
+        "neurology",
+        "neurologist",
+        "neurologists"
+      ],
+      [
+        "urology",
+        "urologist",
+        "urologists"
+      ],
+      [
+        "orthopedic",
+        "orthopedics",
+        "orthopaedic",
+        "orthopaedics",
+        "orthopedician",
+        "orthopedicians"
+      ],
+      [
+        "ENT",
+        "ear nose throat"
+      ],
+      [
+        "psychiatry",
+        "psychiatrist",
+        "psychiatrists"
+      ],
+      [
+        "gastroenterology",
+        "gastroenterologist",
+        "gastroenterologists"
       ]
     ]
   },
