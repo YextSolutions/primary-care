@@ -30,7 +30,7 @@
           "facet": true,
           "nlpFilter": true
         },
-        "builtinFile.medicalFacilityConditions": {
+        "builtinFile.medicalFacilityConditions_b": {
           "nlpFilter": true
         },
         "c_relatedProfessionals.name": {
