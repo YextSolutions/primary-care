@@ -6,15 +6,20 @@
   "countryRestrictions": [],
   "verticals": {
     "facilities": {
+      "directAnswers": {
+        "fieldValues": {
+          "eligibleFields": [
+            "mainPhone",
+            "address"
+          ]
+        }
+      },
       "entityTypes": [
         "healthcareFacility"
       ],
       "name": "Facilities",
       "savedSearchId": "36130108",
       "searchableFields": {
-        "address": {
-          "directAnswer": true
-        },
         "builtin.entityType": {
           "nlpFilter": true
         },
@@ -23,6 +28,9 @@
         },
         "builtin.medicalSpecialty": {
           "facet": true,
+          "nlpFilter": true
+        },
+        "builtinFile.medicalFacilityConditions": {
           "nlpFilter": true
         },
         "c_relatedProfessionals.name": {
@@ -34,9 +42,6 @@
         "insuranceAccepted": {
           "facet": true,
           "nlpFilter": true
-        },
-        "mainPhone": {
-          "directAnswer": true
         },
         "name": {
           "textSearch": true
@@ -103,14 +108,19 @@
       "useSynonyms": "ALL_SYNONYMS"
     },
     "providers": {
+      "directAnswers": {
+        "fieldValues": {
+          "eligibleFields": [
+            "mainPhone",
+            "address"
+          ]
+        }
+      },
       "entityTypes": [
         "healthcareProfessional"
       ],
       "name": "Providers",
       "searchableFields": {
-        "address": {
-          "directAnswer": true
-        },
         "builtin.entityType": {
           "nlpFilter": true
         },
@@ -119,6 +129,9 @@
         },
         "builtin.medicalSpecialty": {
           "facet": true,
+          "nlpFilter": true
+        },
+        "builtinFile.medicalCondition_b": {
           "nlpFilter": true
         },
         "c_relatedLocations.name": {
@@ -142,9 +155,6 @@
         },
         "lastName": {
           "phraseMatch": true
-        },
-        "mainPhone": {
-          "directAnswer": true
         },
         "name": {
           "textSearch": true
@@ -197,14 +207,41 @@
       "source": "KNOWLEDGE_MANAGER"
     }
   },
-  "autocomplete": {
-    "disablePopularQueries": false,
-    "hardcodedPrompts": [
+  "querySuggestions": {
+    "popularQueriesBlacklistedTerms": [],
+    "universalPrompts": [
       "Doctors in New York",
       "Clinic near me",
       "Knee pain",
-      "Doctors who speak Spanish and take CIGNA"
-    ]
+      "Doctors who speak Spanish and take CIGNA",
+      "open jobs near me"
+    ],
+    "verticalPrompts": {
+      "faqs": [
+        "[[name]]"
+      ],
+      "facilities": [
+        "Facilities near [[address.city]]",
+        "Facilities near [[address.region]]",
+        "Facilities near me"
+      ],
+      "providers": [
+        "Providers near [[address.city]]",
+        "Providers near [[address.region]]",
+        "Providers near me",
+        "[[name]]"
+      ],
+      "jobs": [
+        "[[name]]",
+        "open jobs near me"
+      ],
+      "specialties": [
+        "[[name]]"
+      ],
+      "conditions": [
+        "[[name]]"
+      ]
+    }
   },
   "synonyms": {
     "oneWay": [
@@ -264,66 +301,6 @@
         "facilities",
         "healthcare facility",
         "healthcare facilities"
-      ],
-      [
-        "cardiology",
-        "cardiologist",
-        "cardiologists",
-        "heart"
-      ],
-      [
-        "oncology",
-        "oncologist",
-        "oncologists",
-        "cancer"
-      ],
-      [
-        "obstetric",
-        "obstetrics",
-        "obstetrician",
-        "obstetricians"
-      ],
-      [
-        "gynecology",
-        "gynecologist",
-        "gynecologists"
-      ],
-      [
-        "dermatology",
-        "dermatologist",
-        "dermatologists"
-      ],
-      [
-        "neurology",
-        "neurologist",
-        "neurologists"
-      ],
-      [
-        "urology",
-        "urologist",
-        "urologists"
-      ],
-      [
-        "orthopedic",
-        "orthopedics",
-        "orthopaedic",
-        "orthopaedics",
-        "orthopedician",
-        "orthopedicians"
-      ],
-      [
-        "ENT",
-        "ear nose throat"
-      ],
-      [
-        "psychiatry",
-        "psychiatrist",
-        "psychiatrists"
-      ],
-      [
-        "gastroenterology",
-        "gastroenterologist",
-        "gastroenterologists"
       ]
     ]
   },
