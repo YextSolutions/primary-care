@@ -5,6 +5,14 @@
   "supportedLocales": [],
   "countryRestrictions": [],
   "verticals": {
+    "cdc-covid": {
+      "headers": {},
+      "method": "POST",
+      "name": "CDC Coronavirus FAQs",
+      "params": {},
+      "source": "CUSTOM_SEARCHER",
+      "url": "https://lps9q23cb7.execute-api.us-east-1.amazonaws.com/prod"
+    },
     "facilities": {
       "directAnswers": {
         "fieldValues": {
@@ -41,12 +49,10 @@
         },
         "insuranceAccepted": {
           "facet": true,
-          "nlpFilter": true
-        },
-        "name": {
           "textSearch": true
         },
-        "keywords": {
+        "name": {
+          "phraseMatch": true,
           "textSearch": true
         }
       },
@@ -90,6 +96,7 @@
           "textSearch": true
         },
         "name": {
+          "phraseMatch": true,
           "textSearch": true
         },
         "keywords": {
@@ -106,6 +113,14 @@
       "siteRestricted": false,
       "source": "GOOGLE_CSE",
       "useSynonyms": "ALL_SYNONYMS"
+    },
+    "nhs-covid": {
+      "headers": {},
+      "method": "POST",
+      "name": "NHS Coronavirus FAQs",
+      "params": {},
+      "source": "CUSTOM_SEARCHER",
+      "url": "https://qt81fms627.execute-api.us-east-1.amazonaws.com/prod"
     },
     "providers": {
       "directAnswers": {
@@ -138,7 +153,8 @@
           "textSearch": true
         },
         "firstName": {
-          "phraseMatch": true
+          "phraseMatch": true,
+          "textSearch": true
         },
         "gender": {
           "facet": true,
@@ -146,17 +162,18 @@
         },
         "insuranceAccepted": {
           "facet": true,
-          "nlpFilter": true
+          "textSearch": true
         },
         "languages": {
           "facet": true,
-          "nlpFilter": true,
           "textSearch": true
         },
         "lastName": {
-          "phraseMatch": true
+          "phraseMatch": true,
+          "textSearch": true
         },
         "name": {
+          "phraseMatch": true,
           "textSearch": true
         },
         "keywords": {
@@ -177,6 +194,7 @@
           "nlpFilter": true
         },
         "name": {
+          "phraseMatch": true,
           "textSearch": true
         },
         "keywords": {
@@ -197,6 +215,7 @@
           "nlpFilter": true
         },
         "name": {
+          "phraseMatch": true,
           "textSearch": true
         },
         "keywords": {
@@ -205,6 +224,14 @@
       },
       "sortBys": [],
       "source": "KNOWLEDGE_MANAGER"
+    },
+    "who-covid": {
+      "headers": {},
+      "method": "POST",
+      "name": "WHO Coronavirus FAQs",
+      "params": {},
+      "source": "CUSTOM_SEARCHER",
+      "url": "https://twm82am3y0.execute-api.us-east-1.amazonaws.com/prod"
     }
   },
   "querySuggestions": {
