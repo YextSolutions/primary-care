@@ -35,17 +35,18 @@
           "nlpFilter": true
         },
         "builtin.medicalSpecialty": {
-          "facet": true,
           "nlpFilter": true
         },
         "builtinFile.medicalFacilityConditions_b": {
           "nlpFilter": true
         },
         "c_relatedProfessionals.name": {
-          "textSearch": true
+          "textSearch": true,
+          "phraseMatch": true
         },
         "c_relatedSpecialty.name": {
-          "textSearch": true
+          "textSearch": true,
+          "phraseMatch": true
         },
         "insuranceAccepted": {
           "facet": true,
@@ -89,6 +90,12 @@
         "builtin.entityType": {
           "nlpFilter": true
         },
+        "builtin.location": {
+          "nlpFilter": true
+        },
+        "c_department": {
+          "textSearch": true
+        },
         "employmentType": {
           "nlpFilter": true
         },
@@ -96,7 +103,6 @@
           "textSearch": true
         },
         "name": {
-          "phraseMatch": true,
           "textSearch": true
         },
         "keywords": {
@@ -143,14 +149,14 @@
           "nlpFilter": true
         },
         "builtin.medicalSpecialty": {
-          "facet": true,
           "nlpFilter": true
         },
         "builtinFile.medicalCondition_b": {
           "nlpFilter": true
         },
         "c_relatedLocations.name": {
-          "textSearch": true
+          "textSearch": true,
+          "phraseMatch": true
         },
         "firstName": {
           "phraseMatch": true,
