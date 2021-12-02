@@ -302,6 +302,18 @@
           "obstetrics",
           "gynecology"
         ]
+      },
+      {
+        "phrase": "physician",
+        "synonyms": [
+          "healthcare professional"
+        ]
+      },
+      {
+        "phrase": "physicians",
+        "synonyms": [
+          "healthcare professional"
+        ]
       }
     ],
     "synonymSet": [
@@ -316,8 +328,6 @@
       [
         "doctor",
         "doctors",
-        "physician",
-        "physicians",
         "provider",
         "providers",
         "professional",
