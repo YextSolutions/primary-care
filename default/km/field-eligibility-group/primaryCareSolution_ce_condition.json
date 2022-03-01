@@ -1,7 +1,7 @@
 {
-  "$id": "ce_condition.default",
+  "$id": "primaryCareSolution_ce_condition",
   "$schema": "https://schema.yext.com/config/km/field-eligibility-group/v1",
-  "name": "Condition-default",
+  "name": "primaryCareSolution-Condition",
   "entityType": "ce_condition",
   "fields": [
     "landingPageUrl",
