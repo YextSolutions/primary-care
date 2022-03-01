@@ -1,7 +1,7 @@
 {
-  "$id": "primaryCareSolution_ce_specialty",
+  "$id": "ce_specialty.default",
   "$schema": "https://schema.yext.com/config/km/field-eligibility-group/v1",
-  "name": "primaryCareSolution-Specialty",
+  "name": "Specialty-default",
   "entityType": "ce_specialty",
   "fields": [
     "landingPageUrl",
