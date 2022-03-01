@@ -1,7 +1,7 @@
 {
-  "$id": "healthcareProfessional.default",
+  "$id": "primaryCareSolution_healthcareProfessional",
   "$schema": "https://schema.yext.com/config/km/field-eligibility-group/v1",
-  "name": "Healthcare Professional-default",
+  "name": "primaryCareSolution-Healthcare Professional",
   "entityType": "healthcareProfessional",
   "fields": [
     "c_activeInAnswers",
