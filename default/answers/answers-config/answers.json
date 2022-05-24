@@ -10,8 +10,36 @@
       "method": "POST",
       "name": "CDC Coronavirus FAQs",
       "params": {},
+      "semanticVerticalIntents": [],
       "source": "CUSTOM_SEARCHER",
       "url": "https://lps9q23cb7.execute-api.us-east-1.amazonaws.com/prod"
+    },
+    "conditions": {
+      "entityTypes": [
+        "ce_condition"
+      ],
+      "name": "Conditions",
+      "savedSearchId": "408871669",
+      "searchableFields": {
+        "builtin.entityType": {
+          "nlpFilter": true
+        },
+        "keywords": {
+          "textSearch": true
+        },
+        "name": {
+          "phraseMatch": true,
+          "textSearch": true
+        }
+      },
+      "semanticVerticalIntents": [
+        "conditions",
+        "diseases",
+        "illness"
+      ],
+      "semanticVerticalThreshold": 0.2,
+      "sortBys": [],
+      "source": "KNOWLEDGE_MANAGER"
     },
     "facilities": {
       "directAnswers": {
@@ -19,7 +47,8 @@
           "eligibleFields": [
             "mainPhone",
             "address"
-          ]
+          ],
+          "predictionMode": "CLASSIFIER"
         }
       },
       "entityTypes": [
@@ -41,12 +70,12 @@
           "nlpFilter": true
         },
         "c_relatedProfessionals.name": {
-          "textSearch": true,
-          "phraseMatch": true
+          "phraseMatch": true,
+          "textSearch": true
         },
         "c_relatedSpecialty.name": {
-          "textSearch": true,
-          "phraseMatch": true
+          "phraseMatch": true,
+          "textSearch": true
         },
         "insuranceAccepted": {
           "facet": true,
@@ -57,6 +86,13 @@
           "textSearch": true
         }
       },
+      "semanticVerticalBias": 0.1,
+      "semanticVerticalIntents": [
+        "facilities",
+        "facilities near me",
+        "hospitals"
+      ],
+      "semanticVerticalThreshold": 0.2,
       "sortBys": [],
       "source": "KNOWLEDGE_MANAGER"
     },
@@ -70,13 +106,18 @@
         "builtin.entityType": {
           "nlpFilter": true
         },
-        "name": {
-          "semanticTextSearch": true
-        },
         "keywords": {
           "textSearch": true
+        },
+        "name": {
+          "semanticTextSearch": true
         }
       },
+      "semanticVerticalIntents": [
+        "questions",
+        "faqs"
+      ],
+      "semanticVerticalThreshold": 0.2,
       "sortBys": [],
       "source": "KNOWLEDGE_MANAGER"
     },
@@ -102,13 +143,19 @@
         "hiringOrganization": {
           "textSearch": true
         },
-        "name": {
+        "keywords": {
           "textSearch": true
         },
-        "keywords": {
+        "name": {
           "textSearch": true
         }
       },
+      "semanticVerticalBias": -0.1,
+      "semanticVerticalIntents": [
+        "jobs",
+        "careers"
+      ],
+      "semanticVerticalThreshold": 0.2,
       "sortBys": [],
       "source": "KNOWLEDGE_MANAGER"
     },
@@ -116,6 +163,7 @@
       "apiKey": "REPLACE_API_KEY",
       "cx": "REPLACE_CX_KEY",
       "name": "Links",
+      "semanticVerticalIntents": [],
       "siteRestricted": false,
       "source": "GOOGLE_CSE",
       "useSynonyms": "ALL_SYNONYMS"
@@ -125,6 +173,7 @@
       "method": "POST",
       "name": "NHS Coronavirus FAQs",
       "params": {},
+      "semanticVerticalIntents": [],
       "source": "CUSTOM_SEARCHER",
       "url": "https://qt81fms627.execute-api.us-east-1.amazonaws.com/prod"
     },
@@ -134,7 +183,8 @@
           "eligibleFields": [
             "mainPhone",
             "address"
-          ]
+          ],
+          "predictionMode": "CLASSIFIER"
         }
       },
       "entityTypes": [
@@ -155,8 +205,8 @@
           "nlpFilter": true
         },
         "c_relatedLocations.name": {
-          "textSearch": true,
-          "phraseMatch": true
+          "phraseMatch": true,
+          "textSearch": true
         },
         "firstName": {
           "phraseMatch": true,
@@ -170,6 +220,9 @@
           "facet": true,
           "textSearch": true
         },
+        "keywords": {
+          "textSearch": true
+        },
         "languages": {
           "facet": true,
           "textSearch": true
@@ -181,11 +234,15 @@
         "name": {
           "phraseMatch": true,
           "textSearch": true
-        },
-        "keywords": {
-          "textSearch": true
         }
       },
+      "semanticVerticalBias": 0.1,
+      "semanticVerticalIntents": [
+        "providers",
+        "doctors",
+        "providers near me"
+      ],
+      "semanticVerticalThreshold": 0.2,
       "sortBys": [],
       "source": "KNOWLEDGE_MANAGER"
     },
@@ -199,35 +256,19 @@
         "builtin.entityType": {
           "nlpFilter": true
         },
+        "keywords": {
+          "textSearch": true
+        },
         "name": {
           "phraseMatch": true,
           "textSearch": true
-        },
-        "keywords": {
-          "textSearch": true
         }
       },
-      "sortBys": [],
-      "source": "KNOWLEDGE_MANAGER"
-    },
-    "conditions": {
-      "entityTypes": [
-        "ce_condition"
+      "semanticVerticalBias": -0.1,
+      "semanticVerticalIntents": [
+        "specialties"
       ],
-      "name": "Conditions",
-      "savedSearchId": "408871669",
-      "searchableFields": {
-        "builtin.entityType": {
-          "nlpFilter": true
-        },
-        "name": {
-          "phraseMatch": true,
-          "textSearch": true
-        },
-        "keywords": {
-          "textSearch": true
-        }
-      },
+      "semanticVerticalThreshold": 0.2,
       "sortBys": [],
       "source": "KNOWLEDGE_MANAGER"
     },
@@ -236,44 +277,9 @@
       "method": "POST",
       "name": "WHO Coronavirus FAQs",
       "params": {},
+      "semanticVerticalIntents": [],
       "source": "CUSTOM_SEARCHER",
       "url": "https://twm82am3y0.execute-api.us-east-1.amazonaws.com/prod"
-    }
-  },
-  "querySuggestions": {
-    "popularQueriesBlacklistedTerms": [],
-    "universalPrompts": [
-      "Doctors in New York",
-      "Clinic near me",
-      "Knee pain",
-      "Doctors who speak Spanish and take CIGNA",
-      "open jobs near me"
-    ],
-    "verticalPrompts": {
-      "faqs": [
-        "[[name]]"
-      ],
-      "facilities": [
-        "Facilities near [[address.city]]",
-        "Facilities near [[address.region]]",
-        "Facilities near me"
-      ],
-      "providers": [
-        "Providers near [[address.city]]",
-        "Providers near [[address.region]]",
-        "Providers near me",
-        "[[name]]"
-      ],
-      "jobs": [
-        "[[name]]",
-        "open jobs near me"
-      ],
-      "specialties": [
-        "[[name]]"
-      ],
-      "conditions": [
-        "[[name]]"
-      ]
     }
   },
   "synonyms": {
@@ -347,5 +353,44 @@
       ]
     ]
   },
-  "localizations": {}
+  "localizations": {},
+  "additionalSearchablePlaces": [],
+  "querySuggestions": {
+    "disablePopularQueries": false,
+    "verticalPromptsOnEmpty": false,
+    "popularQueriesBlacklistedTerms": [],
+    "universalPrompts": [
+      "Doctors in New York",
+      "Clinic near me",
+      "Knee pain",
+      "Doctors who speak Spanish and take CIGNA",
+      "open jobs near me"
+    ],
+    "verticalPrompts": {
+      "conditions": [
+        "[[name]]"
+      ],
+      "facilities": [
+        "Facilities near [[address.city]]",
+        "Facilities near [[address.region]]",
+        "Facilities near me"
+      ],
+      "faqs": [
+        "[[name]]"
+      ],
+      "jobs": [
+        "[[name]]",
+        "open jobs near me"
+      ],
+      "providers": [
+        "Providers near [[address.city]]",
+        "Providers near [[address.region]]",
+        "Providers near me",
+        "[[name]]"
+      ],
+      "specialties": [
+        "[[name]]"
+      ]
+    }
+  }
 }
